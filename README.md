@@ -1,4 +1,5 @@
 Open Tesla Folder (client )
+
    npm i 
    npm start
 
