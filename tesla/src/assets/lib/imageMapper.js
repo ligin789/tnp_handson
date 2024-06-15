@@ -19,16 +19,36 @@ import Model3_6 from "../images/cars/Model3/Model3_56.jpg";
 import Model3_7 from "../images/cars/Model3/Model3_57.jpg";
 import Model3_8 from "../images/cars/Model3/Model3_58.jpg";
 
-//Model3Performance
+//Model S
 
-import Model3Performance_1 from "../images/cars/Model3Performance/Model-3-Performance_52.jpg";
-import Model3Performance_2 from "../images/cars/Model3Performance/Model-3-Performance_53.jpg";
-import Model3Performance_3 from "../images/cars/Model3Performance/Model-3-Performance_54.jpg";
-import Model3Performance_4 from "../images/cars/Model3Performance/Model-3-Performance_55.jpg";
-import Model3Performance_5 from "../images/cars/Model3Performance/Model-3-Performance_56.jpg";
-import Model3Performance_6 from "../images/cars/Model3Performance/Model-3-Performance_57.jpg";
-import Model3Performance_7 from "../images/cars/Model3Performance/Model-3-Performance_58.jpg";
-import Model3Performance_8 from "../images/cars/Model3Performance/Model-3-Performance_59.jpg";
+import ModelS_1 from '../images/cars/ModelS/ModelS_62.jpg'
+import ModelS_2 from '../images/cars/ModelS/ModelS_63.jpg'
+import ModelS_3 from '../images/cars/ModelS/ModelS_64.jpg'
+import ModelS_4 from '../images/cars/ModelS/ModelS_65.jpg'
+
+//Model X
+
+
+import ModelX_1 from '../images/cars/ModelX/ModelX_63.jpg'
+import ModelX_2 from '../images/cars/ModelX/ModelX_64.jpg'
+import ModelX_3 from '../images/cars/ModelX/ModelX_66.jpg'
+import ModelX_4 from '../images/cars/ModelX/ModelX_67.jpg'
+
+//Model Y
+
+import ModelY_1 from '../images/cars/ModelY/ModelY_61.jpg'
+import ModelY_2 from '../images/cars/ModelY/ModelY_62.jpg'
+import ModelY_3 from '../images/cars/ModelY/ModelY_63.jpg'
+import ModelY_4 from '../images/cars/ModelY/ModelY_64.jpg'
+
+
+//Roadster  0x0-Roadster_01.jpg
+
+import Road_1 from '../images/cars/Roadster/0x0-Roadster_01.jpg'
+import Road_2 from '../images/cars/Roadster/0x0-Roadster_02.jpg'
+import Road_3 from '../images/cars/Roadster/0x0-Roadster_03.jpg'
+import Road_4 from '../images/cars/Roadster/0x0-Roadster_04.jpg'
+
 
 const imageMapping = {
   Cybertruck: [
@@ -50,48 +70,18 @@ const imageMapping = {
     Model3_6,
     Model3_7,
     Model3_8,
+  ],ModelS:[
+    ModelS_1,ModelS_2,ModelS_3,ModelS_4
   ],
-  Model3Performance: [
-    Model3Performance_1,
-    Model3Performance_2,
-    Model3Performance_3,
-    Model3Performance_4,
-    Model3Performance_5,
-    Model3Performance_6,
-    Model3Performance_7,
-    Model3Performance_8,
+  ModelX:[
+    ModelX_1,ModelX_2,ModelX_3,ModelX_4
   ],
+  ModelY:[
+    ModelY_1,ModelY_2,ModelY_3,ModelY_4
+  ],
+  Roadster:[
+    Road_1,Road_2,Road_3,Road_4
+  ]
 };
-// const imageMapping = {
-//   Cybertruck: [
-//     "../assets/images/cars/Cybertruck/Cybertruck_19.jpg",
-//     "../assets/images/cars/Cybertruck/Cybertruck_20.jpg",
-//     "../assets/images/cars/Cybertruck/Cybertruck_22.jpg",
-//     "../assets/images/cars/Cybertruck/Cybertruck_23.jpg",
-//     "../assets/images/cars/Cybertruck/Cybertruck_61.jpg",
-//     "../assets/images/cars/Cybertruck/Cybertruck_62.jpg",
-//     "../assets/images/cars/Cybertruck/Cybertruck_63.jpg",
-//     "../assets/images/cars/Cybertruck/Cybertruck_64.jpg",
-//   ],
-//   Model3: [
-//     "../assets/images/cars/Model3/Model3_50.jpg",
-//     "../assets/images/cars/Model3/Model3_51.jpg",
-//     "../assets/images/cars/Model3/Model3_52.jpg",
-//     "../assets/images/cars/Model3/Model3_53.jpg",
-//     "../assets/images/cars/Model3/Model3_54.jpg",
-//     "../assets/images/cars/Model3/Model3_56.jpg",
-//     "../assets/images/cars/Model3/Model3_57.jpg",
-//     "../assets/images/cars/Model3/Model3_58.jpg",
-//   ],
-//   Model3Performance: [
-//     "../assets/images/cars/Model3Performance/Model-3-Performance_52.jpg",
-//     "../assets/images/cars/Model3Performance/Model-3-Performance_53.jpg",
-//     "../assets/images/cars/Model3Performance/Model-3-Performance_54.jpg",
-//     "../assets/images/cars/Model3Performance/Model-3-Performance_55.jpg",
-//     "../assets/images/cars/Model3Performance/Model-3-Performance_56.jpg",
-//     "../assets/images/cars/Model3Performance/Model-3-Performance_57.jpg",
-//     "../assets/images/cars/Model3Performance/Model-3-Performance_58.jpg",
-//     "../assets/images/cars/Model3Performance/Model-3-Performance_59.jpg",
-//   ],
-// };
+
 export default imageMapping;

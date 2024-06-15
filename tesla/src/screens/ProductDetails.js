@@ -17,7 +17,8 @@ function ProductDetails() {
   const [saleStatus, setSaleStatus] = useState(false);
   const props = useLocation();
   const [price, setPrice] = useState();
-  let arra = [1, 2, 4];
+
+  const galleryImges=imageMapping[props.state?.name?.id]
 
   useEffect(() => {
     setPrice(parseFloat(props.state?.name?.price) || 0)
@@ -121,7 +122,7 @@ function ProductDetails() {
               <img
                 className="h-100 img-fluid"
                 style={{ objectFit: "cover" }}
-                src={CarouselImgFirst}
+                src={galleryImges[0]}
                 sizes="(max-width: 1080px) 100vw, 1080px"
                 width="1080"
                 height="768"
@@ -133,7 +134,7 @@ function ProductDetails() {
               <img
                 className="h-100 img-fluid"
                 style={{ objectFit: "cover" }}
-                src={CarouselImgFirst}
+                src={galleryImges[1]}
                 sizes="(max-width: 1080px) 100vw, 1080px"
                 width="1080"
                 height=""
@@ -147,7 +148,7 @@ function ProductDetails() {
               <img
                 className="h-100 img-fluid"
                 style={{ objectFit: "cover" }}
-                src={CarouselImgFirst}
+                src={galleryImges[2]}
                 sizes="(max-width: 1080px) 100vw, 1080px"
                 width="1080"
                 height=""
@@ -159,7 +160,7 @@ function ProductDetails() {
               <img
                 className="h-100 img-fluid"
                 style={{ objectFit: "cover" }}
-                src={CarouselImgFirst}
+                src={galleryImges[3]}
                 sizes="(max-width: 1080px) 100vw, 1080px"
                 width="1080"
                 height="768"
