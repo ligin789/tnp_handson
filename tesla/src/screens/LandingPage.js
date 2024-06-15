@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "../assets/style.css";
 import FirstImg from "../assets/heroSectionImg.png";
 import Heroimg from '../assets/images/cars/Roadster/heroImg.png'
@@ -45,7 +45,7 @@ function LandingPage() {
                 </a>
               </div>
             </div>
-            <div className="col-md-6 text-center"  data-aos="fade-down-right">
+            <div className="col-md-6 text-center" data-aos="fade-down-right">
               <img
                 src={Heroimg}
                 alt="Car"
@@ -62,7 +62,7 @@ function LandingPage() {
           <div className="section-wrap col-10 mx-auto text-center page-section-for-scroll position-relative">
             <div id="whyteslaSection"></div>
             <hr className="colored mx-auto" />
-            <h3 className="mt-n2 mb-n2 section-title">Why Tesla ?</h3>
+            <h3 className="mt-n2 mb-n2 section-title">Gallary </h3>
             <hr className="colored mx-auto invertedHr" />
           </div>
           <Carousel
@@ -107,26 +107,94 @@ function LandingPage() {
           <h3 className="mt-n2 mb-n2 section-title">Why Tesla ?</h3>
           <hr className="colored mx-auto invertedHr" />
         </div>
-        <div className="custom-card-wrap position-relative">
+        <div className="container">
+          <div className="row my-5">
+            <div className="col">
+              <div className="custom-card-title-group">
+                <div className="custom-card-title ml-5 my-5">
+                  Tackling Climate Change
+                </div>
+              </div>
+
+              <div className="custom-card-description-wrap mr-n5">
+                <div className="custom-card-description text-justify">
+                  At Tesla, we imagine a world where you can power everything with renewable energy. Our team is dedicated to solving problems that will have the most meaningful impact on emissions.
+
+
+                  <br />
+                  <a href="#">
+                    {" "}
+                    <a
+                      type="button"
+                      className="shadow9 col-5 mt-5 custom-button text-center "
+                      href='https://www.tesla.com/'
+                    >
+                      Know More
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="custom-card-image-wrap rounded" data-aos="fade-right">
+                <img
+                  src={whySectionSecond}
+                  className="img-fluid rounded"
+                  alt="pay_with_bio_vector"
+                  width={500}
+                  height={300}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="row my-5">
+            <div className="col">
+              <div className="custom-card-image-wrap-two" data-aos="fade-left">
+                <img
+                  src={whySectionFirst}
+                  className="img-fluid rounded"
+                  alt="teslacar"
+                  width={500}
+                  height={300}
+                />
+              </div>
+            </div>
+            <div className="col">
+              <div className="custom-card-title-group">
+                <div className="custom-card-title ml-5 my-5">
+                  Powering the Future
+                </div>
+              </div>
+              <div className="custom-card-description text-justify">
+                Elevate your Driving Experience with Tesla's Cutting-Edge Electric
+                Vechiles.Combining Unrivaled Performance and Efficiency.
+                <br />
+                <a href="#">
+                  {" "}
+                  <a
+                    type="button"
+                    className="shadow9 col-5 mt-5 custom-button text-center "
+                    href='https://www.tesla.com/'
+                  >
+                    Know More
+                  </a>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="custom-card-wrap position-relative">
           <div id="PaywithBiometrics"></div>
           <div className="custom-card-title-group">
-            <div className="custom-card-title ml-5 mt-5">
-            Tackling Climate Change
+            <div className="custom-card-title ml-0 mt-5">
+              Tackling Climate Change
 
             </div>
           </div>
-          <div className="custom-card-image-wrap rounded"  data-aos="fade-right">
-            <img
-              src={whySectionSecond}
-              className="img-fluid rounded"
-              alt="pay_with_bio_vector"
-              width={500}
-              height={300}
-            />
-          </div>
-          <div className="custom-card-description-wrap">
+        
+          <div className="custom-card-description-wrap mr-n5">
             <div className="custom-card-description text-justify">
-            At Tesla, we imagine a world where you can power everything with renewable energy. Our team is dedicated to solving problems that will have the most meaningful impact on emissions.
+              At Tesla, we imagine a world where you can power everything with renewable energy. Our team is dedicated to solving problems that will have the most meaningful impact on emissions.
 
 
               <br />
@@ -151,7 +219,7 @@ function LandingPage() {
               Powering the Future
             </div>
           </div>
-          <div className="custom-card-image-wrap-two"  data-aos="fade-left">
+          <div className="custom-card-image-wrap-two" data-aos="fade-left">
             <img
               src={whySectionFirst}
               className="img-fluid rounded"
@@ -177,7 +245,7 @@ function LandingPage() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );

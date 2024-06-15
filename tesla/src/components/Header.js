@@ -18,7 +18,7 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src={TeslanameLogo}
             width="140"
@@ -26,7 +26,7 @@ function Header() {
             className="d-inline-block align-top ml-5"
             alt=""
           />
-        </a>
+        </Link>
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
@@ -41,11 +41,6 @@ function Header() {
                 <Link className="nav-link" to="/products">
                   Products
                 </Link>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contacts
-                </a>
               </li>
             </ul>
           </form>
