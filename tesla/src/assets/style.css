@@ -1,0 +1,726 @@
+.hero-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+ 
+.heading-part{
+  font-size: 36px;
+  font-weight: bold;
+}
+ 
+.hero-subtext {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.hero-subtext2 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--DarkBlue); /* Dark color */
+}
+ 
+.hero-buttons {
+  margin-top: 30px;
+}
+ 
+.hero-buttons .btn {
+  margin-right: 10px;
+}
+ 
+.nav-link {
+  color: #dc3545 !important;
+  font-size: 16px !important;
+}
+ 
+.nav-link:hover {
+  color: #007bff;
+}
+ 
+.navbar-brand {
+  font-weight: bold;
+}
+ 
+.faq-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+.hero-section2 {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+ 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --DarkBlue: #002b5d;
+    --LightRed: #ff0000;
+    --premiumRed: #cc3333;
+    --MediumBlue: #094b98;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--DarkBlue);
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: none;
+}
+
+
+
+
+.shadow9 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.custom-button {
+    background-color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: var(--LightRed);
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none !important;
+}
+
+.custom-button:hover {
+    transition: .6s;
+    background-color: var(--premiumRed);
+    color: white;
+}
+
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #fff;
+}
+
+
+.active {
+    font-weight: 700 !important;
+}
+
+.section-wrap {
+    width: 100%;
+    height: auto;
+    margin: 50px 0px;
+    padding: 10px 80px;
+}
+
+
+
+
+hr.colored {
+    width: 29vw;
+    min-width: 180px;
+    border: 0;
+    border-radius: 3px;
+    height: 7px;
+    /* in order to override TWBS stylesheet */
+    background: -moz-linear-gradient(left, var(--LightRed) 50%, #ebf9ff 50%);
+    /* FF3.6+ */
+    background: -webkit-linear-gradient(left, var(--LightRed) 50%, #ebf9ff 50%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, var(--LightRed) 50%, #ebf9ff 50%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, var(--LightRed) 50%, #ebf9ff 50%);
+    /* IE10+ */
+    background: linear-gradient(to right, var(--LightRed) 50%, #ebf9ff 50%);
+    /* W3C */
+}
+
+.section-title {
+    font-size: 28px;
+}
+
+
+/* Custom card */
+
+.custom-card-wrap {
+    width: 70%;
+    margin: 0px auto 120px auto;
+    display: grid;
+    grid-template-areas: "titleGroup cardImage" "cardDescription cardImage";
+    grid-template-rows: 120px auto;
+}
+
+.custom-card-wrap-two {
+    width: 70%;
+    margin: 0px auto 120px auto;
+    display: grid;
+    grid-template-areas: "cardImage titleGroup" "cardImage cardDescription";
+    grid-template-rows: 120px auto;
+}
+
+
+
+.custom-card-number {
+    width: 90px;
+}
+
+.custom-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--DarkBlue);
+}
+
+.custom-card-image-wrap {
+    grid-area: cardImage;
+    text-align: right;
+   
+}
+.custom-card-image-wrap-two {
+  grid-area: cardImage;
+  text-align: left;
+ 
+}
+
+.custom-card-image-left {
+    float: left;
+}
+
+.custom-card-description-wrap {
+    grid-area: cardDescription;
+}
+
+.custom-card-description {
+    transform: translate(50px, -15px);
+    width: 400px;
+    font-size: 16px;
+}
+
+
+/* Custom card End */
+
+@media only screen and (max-width: 1100px) {
+    /* Footer */
+    .footer-wrap {
+        grid-template-areas: 'brand-card''description ' 'group-links' 'social-links' ' copyright';
+    }
+    .footer-description {
+        width: 100%;
+    }
+    .footer-social-links {
+        width: 100%;
+    }
+    .footer-group-links {
+        padding: 30px 80px;
+    }
+    /* Footer End */
+}
+
+@media only screen and (min-width: 1770px) {
+    /* Listed on */
+    .listed-on-card {
+        max-width: 20vw;
+        margin: 10px 20px;
+    }
+    /* Listed on End */
+}
+
+@media only screen and (max-width: 1110px) {
+    .team-card {
+        min-width: 170px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .listed-on-card {
+        min-width: 235px;
+        padding: 15px;
+    }
+    /* Custom card */
+    .custom-card-wrap {
+        grid-template-areas: "titleGroup" "cardImage" "cardDescription";
+    }
+    .custom-card-wrap-two {
+        grid-template-areas: "titleGroup" "cardImage" "cardDescription";
+    }
+    .custom-card-image-left {
+        float: right;
+    }
+    /* Custom card End */
+}
+
+@media only screen and (max-width: 600px) {
+    .section-title {
+        font-size: 20px;
+    }
+    .section-wrap {
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+    .intro-text {
+        font-size: 5.3vw;
+    }
+    .intro-text .bold-text {
+        text-shadow: none;
+    }
+    .value-wrap {
+        width: 90%;
+        margin: 0px auto 50px auto;
+    }
+    .custom-button {
+        font-size: 14px;
+    }
+    .image-one {
+        margin-top: 15px;
+    }
+    /* Custom card */
+    .custom-card-wrap {
+        width: 80%;
+        grid-template-areas: "titleGroup" "cardImage" "cardDescription";
+    }
+    .custom-card-wrap-two {
+        width: 80%;
+        grid-template-areas: "titleGroup" "cardImage" "cardDescription";
+    }
+    .custom-card-number {
+        width: 50px;
+    }
+    .custom-card-title {
+        font-size: 18px;
+        font-weight: 600;
+        width: 170px;
+    }
+    /* .custom-card-description {
+        transform: translate(0px, 0px);
+        width: 100%;
+        font-size: 18px;
+        margin-top: 40px;
+        color: red !important;
+    } */
+    /* Custom card End */
+    /* Team section */
+    .overlay {
+        width: 75%;
+        margin-top: -10px;
+        height: 67%;
+    }
+    .team-wrap {
+        width: 90%;
+    }
+    .team-card {
+        min-width: 161px;
+    }
+    .team-name {
+        font-size: 14px;
+    }
+    .team-position {
+        font-size: 12px;
+    }
+    .team-image {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    /* Team section end */
+    /* Listed on */
+    .listed-on-card {
+        width: 100%;
+    }
+    .listed-on-image {
+        width: 70%;
+    }
+    /* Listed on End */
+    /* FAQ Section  */
+    .faq-card-wrap {
+        padding: 10px 20px;
+    }
+    .faq-card-head {
+        font-size: 15px;
+    }
+    .faq-card-arrow {
+        font-size: 15px;
+        height: 35px;
+    }
+    .faq-card-body {
+        font-size: 14px;
+    }
+    /* FAQ Section End */
+    /* Footer */
+    .footer-description {
+        font-size: 15px;
+        padding: 30px 10px 8px 10px;
+    }
+    .footer-social-links {
+        width: 100%;
+        padding: 10px;
+    }
+    .footer-group-links {
+        font-size: 15px;
+        padding: 20px 10px;
+        grid-area: group-links;
+    }
+    .footer-copyright {
+        font-size: 14px;
+    }
+    /* Footer End */
+}
+
+@media (max-width: 2000px) and (min-width: 1700px) {
+    .nav-item {
+        margin: 0px 2vw;
+    }
+    .hero-text {
+        margin-left: 100px;
+        margin-top: 100px;
+        color:var(--LightRed);
+        font-weight: 600;
+        font-size: 26px;
+    }
+    .intro-text {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 1700px) and (min-width: 1400px) {
+    .hero-text {
+        margin-left: 100px;
+        margin-top: 70px;
+    }
+    .intro-text {
+        font-size: 38px;
+    }
+}
+
+
+/* New style*/
+
+.dot-img1 {
+    position: absolute;
+    z-index: 0;
+    top: 80px;
+    left: -40px;
+    opacity: 0.65;
+    transform: rotate(90deg);
+}
+
+.dot-img2 {
+    position: absolute;
+    z-index: 0;
+    top: 70px;
+    left: 250px;
+    opacity: 0.65;
+}
+
+.dot-img3 {
+    position: absolute;
+    z-index: 0;
+    top: 70px;
+    right: 0;
+    opacity: 0.65;
+}
+
+.dot-img4 {
+    position: absolute;
+    z-index: 0;
+    top: 170px;
+    right: 250px;
+    opacity: 0.65;
+}
+
+.dot-img5 {
+    position: absolute;
+    z-index: 0;
+    top: 420px;
+    right: -30px;
+    transform: rotate(90deg);
+    opacity: 0.65;
+}
+
+.dot-img6 {
+    position: absolute;
+    z-index: 0;
+    top: 1200px;
+    left: -50px;
+    transform: rotate(90deg);
+    opacity: 0.65;
+}
+
+.dot-img7 {
+    position: absolute;
+    z-index: 0;
+    left: 5px;
+    top: 6px;
+    z-index: 2;
+    transform: rotate();
+    overflow: hidden;
+    opacity: 0.65;
+}
+
+.dot-img8 {
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+    top: 100rem;
+    z-index: 0;
+    overflow: hidden;
+    opacity: 0.65;
+}
+
+.dot-img9 {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 150rem;
+    z-index: 0;
+    overflow: hidden;
+    transform: rotate(180deg);
+    opacity: 0.65;
+}
+
+.dot-img10 {
+    position: absolute;
+    z-index: 0;
+    right: -180px;
+    top: 6px;
+    z-index: 0;
+    overflow: hidden;
+    opacity: 0.65;
+}
+
+.dot-img11 {
+    position: absolute;
+    z-index: 0;
+    right: -180px;
+    top: 6px;
+    z-index: 0;
+    overflow: hidden;
+    opacity: 0.65;
+}
+
+#TokenmicsSection {
+    margin-top: 150px;
+}
+
+.tokenomics-main-wrapper {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.tokenmics-card {
+    border-radius: 30px;
+    text-align: left;
+    z-index: 3;
+    display: inline;
+    width: 50%;
+    margin-left: 100px;
+    padding: 0% 3% 0% 2%;
+}
+
+.shadow-img1 {
+    position: absolute;
+    left: 270px;
+    top: -20px;
+    z-index: 0;
+}
+
+.shadow-img2 {
+    position: absolute;
+    left: -100px;
+    top: 150px;
+    z-index: 0;
+}
+
+.bullet-img {
+    transform: rotate(-20deg);
+    width: 25px;
+    height: 25px;
+}
+
+.token-round {
+    right: 0;
+    z-index: 1;
+    left: -200px;
+}
+
+@media (max-width: 640px) {
+    .dot-img3 {
+        display: none;
+    }
+    .dot-img1 {
+        display: none;
+    }
+    .dot-img2 {
+        display: none;
+    }
+    .dot-img6 {
+        display: none;
+    }
+    .dot-img7 {
+        display: none;
+    }
+    .dot-img8 {
+        display: none;
+    }
+    .dot-img10 {
+        display: none;
+    }
+}
+
+@media (max-width: 1124px) {
+    .token-round {
+        display: none;
+    }
+    .shadow-img1 {
+        display: none;
+    }
+    .shadow-img2 {
+        display: none;
+    }
+    .tokenmics-card {
+        width: 90%;
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .dot-img2 {
+        left: 400px;
+    }
+    .dot-img3 {
+        right: 0;
+    }
+    .dot-img4 {
+        right: 400px;
+    }
+}
+
+
+/*Crypto to home style*/
+
+.dot2-img1 {
+    position: absolute;
+    left: 10px;
+    top: -35px;
+    opacity: 0.65;
+}
+
+.dot2-img2 {
+    position: absolute;
+    right: 0px;
+    top: 350px;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+.dot2-img3 {
+    position: absolute;
+    left: 0px;
+    top: 50rem;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+.dot2-img4 {
+    position: absolute;
+    right: 15px;
+    bottom: -30px;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+@media (max-width: 360px) {
+    .dot2-img2 {
+        display: none;
+    }
+    .dot2-img3 {
+        display: none;
+    }
+    .dot2-img4 {
+        display: none;
+    }
+}
+
+#text-crypto-wrapper {
+    display: grid;
+    grid-template-areas: 'text-crypto-title text-crypto-title' 'text-crypto-description text-crypto-img';
+}
+
+#text-crypto-img {
+    grid-area: text-crypto-img;
+}
+
+#text-crypto-description {
+    grid-area: text-crypto-description;
+}
+
+#text-crypto-title {
+    grid-area: text-crypto-title;
+}
+
+@media (max-width: 1016px) {
+    #text-crypto-wrapper {
+        grid-template-areas: 'text-crypto-title' 'text-crypto-img' 'text-crypto-description';
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--LightRed);
+    border-radius: 10px;
+}
+
+#TeamSection,
+#HowToBuy,
+#FAQSection,
+#TimelineSection,
+#whyteslaSection,
+#VisionSection {
+    margin-top: -70px;
+    position: absolute;
+}
+
+#TokenmicsSection {
+    position: absolute;
+    margin-top: -83px;
+}
+
+#PaywithBiometrics,
+#GenerateRevenueWithHova,
+#CryptoToHome,
+#ExchangeCryptoInstantly,
+#Crypto-BasedPlatforms,
+#CryptoDebitCards,
+#MakeInformedDecisions {
+    position: absolute;
+    margin-top: -120px;
+}
+
+.invertedHr
+{
+  transform: rotate(180deg)
+}
+
+/* product container */
+.productContainer
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
