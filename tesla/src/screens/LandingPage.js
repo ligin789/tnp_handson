@@ -11,6 +11,7 @@ import whySectionFirst from "../assets/images/cars/ModelS/ModelS_72.jpg";
 import whySectionSecond from "../assets/images/cars/Roadster/0x0-Roadster_08.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ChargerImg from '../assets/images/charging.jpg'
 
 function LandingPage() {
   // Initialize AOS
@@ -107,145 +108,112 @@ function LandingPage() {
           <h3 className="mt-n2 mb-n2 section-title">Why Tesla ?</h3>
           <hr className="colored mx-auto invertedHr" />
         </div>
-        <div className="container">
-          <div className="row my-5">
-            <div className="col">
-              <div className="custom-card-title-group">
-                <div className="custom-card-title ml-5 my-5">
-                  Tackling Climate Change
-                </div>
+        <div className="container mr-4">
+          {/* row 1 start */}
+          <div className="row">
+            <div className="col-md-6 col-sm-12">
+              <div className="custom-card-title ml-3 my-4">
+                Tackling Climate Change
               </div>
-
-              <div className="custom-card-description-wrap mr-n5">
-                <div className="custom-card-description text-justify">
+              <div className=" mr-5">
+                <div className="col-10 text-justify">
                   At Tesla, we imagine a world where you can power everything with renewable energy. Our team is dedicated to solving problems that will have the most meaningful impact on emissions.
 
-
-                  <br />
-                  <a href="#">
-                    {" "}
-                    <a
-                      type="button"
-                      className="shadow9 col-5 mt-5 custom-button text-center "
-                      href='https://www.tesla.com/'
-                    >
-                      Know More
-                    </a>
-                  </a>
                 </div>
+                <a
+                  type="button"
+                  className="shadow9 col-5 my-2 custom-button text-center mt-4"
+                  href='https://www.tesla.com/'
+                >
+                  Know More
+                </a>
               </div>
             </div>
-            <div className="col">
-              <div className="custom-card-image-wrap rounded" data-aos="fade-right">
+            <div className="col-md-6 col-sm-12">
+              <div className="img-fluid rounded" >
                 <img
-                  src={whySectionSecond}
+                  src={FirstImg}
                   className="img-fluid rounded"
-                  alt="pay_with_bio_vector"
-                  width={500}
+                  alt="whySectionSecond"
+                  width={450}
                   height={300}
                 />
               </div>
             </div>
           </div>
+          {/* row 1 end */}
+          {/* row 2 start */}
+
           <div className="row my-5">
-            <div className="col">
-              <div className="custom-card-image-wrap-two" data-aos="fade-left">
+            <div className="col-md-6 col-sm-12 order-1 order-lg-1 order-sm-2 order-md-2">
+              <div className="img-fluid rounded">
                 <img
                   src={whySectionFirst}
                   className="img-fluid rounded"
-                  alt="teslacar"
-                  width={500}
+                  alt="whySectionSecond"
+                  width={450}
                   height={300}
                 />
               </div>
             </div>
-            <div className="col">
-              <div className="custom-card-title-group">
-                <div className="custom-card-title ml-5 my-5">
-                  Powering the Future
+            <div className="col-md-6 col-sm-12 order-lg-2 order-sm-1 order-md-1">
+              <div className="custom-card-title ml-3 my-4">
+                Unlock the Future of Driving
+              </div>
+              <div className=" mr-5">
+                <div className="col-10 text-justify">
+                From the Sleek and Aerodynamic Design to the Seamless Integration of Advanced Technology, Tesla's Electric Vehicles Represent a Groundbreaking Leap in Sustainable Mobility. Experience the Thrill of Uncompromising Performance, Unmatched Efficiency, and Unparalleled Driving Dynamics that Redefine the
                 </div>
-              </div>
-              <div className="custom-card-description text-justify">
-                Elevate your Driving Experience with Tesla's Cutting-Edge Electric
-                Vechiles.Combining Unrivaled Performance and Efficiency.
-                <br />
-                <a href="#">
-                  {" "}
-                  <a
-                    type="button"
-                    className="shadow9 col-5 mt-5 custom-button text-center "
-                    href='https://www.tesla.com/'
-                  >
-                    Know More
-                  </a>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div className="custom-card-wrap position-relative">
-          <div id="PaywithBiometrics"></div>
-          <div className="custom-card-title-group">
-            <div className="custom-card-title ml-0 mt-5">
-              Tackling Climate Change
 
-            </div>
-          </div>
-        
-          <div className="custom-card-description-wrap mr-n5">
-            <div className="custom-card-description text-justify">
-              At Tesla, we imagine a world where you can power everything with renewable energy. Our team is dedicated to solving problems that will have the most meaningful impact on emissions.
-
-
-              <br />
-              <a href="#">
-                {" "}
                 <a
                   type="button"
-                  className="shadow9 col-5 mt-5 custom-button text-center "
+                  className="shadow9 col-5 my-2 custom-button text-center mt-4"
                   href='https://www.tesla.com/'
                 >
                   Know More
                 </a>
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div className="custom-card-wrap-two position-relative">
-          <div id="PaywithBiometrics"></div>
-          <div className="custom-card-title-group">
-            <div className="custom-card-title ml-5 mt-5">
-              Powering the Future
+              </div>
             </div>
+
           </div>
-          <div className="custom-card-image-wrap-two" data-aos="fade-left">
-            <img
-              src={whySectionFirst}
-              className="img-fluid rounded"
-              alt="teslacar"
-              width={500}
-              height={300}
-            />
-          </div>
-          <div className="custom-card-description-wrap">
-            <div className="custom-card-description text-justify">
-              Elevate your Driving Experience with Tesla's Cutting-Edge Electric
-              Vechiles.Combining Unrivaled Performance and Efficiency.
-              <br />
-              <a href="#">
-                {" "}
+          {/* row 2 end */}
+          {/* row 3 start */}
+
+          <div className="row my-5">
+            <div className="col-md-6 col-sm-12">
+              <div className="custom-card-title ml-3 my-4">
+                Charging the Future
+              </div>
+              <div className=" mr-5">
+                <div className="col-10 text-justify">
+                Discover the Electrifying Future of Transportation with Tesla. Our Cutting-Edge Electric Vehicles Combine Exhilarating Performance, Advanced Technology, and Timeless Design to Redefine the Driving Experience
+                </div>
                 <a
                   type="button"
-                  className="shadow9 col-5 mt-5 custom-button text-center "
+                  className="shadow9 col-5 my-2 custom-button text-center mt-4"
                   href='https://www.tesla.com/'
                 >
                   Know More
                 </a>
-              </a>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-12">
+              <div className="img-fluid rounded">
+                <img
+                  src={ChargerImg}
+                  className="img-fluid rounded"
+                  alt="whySectionSecond"
+                  width={450}
+                  height={300}
+                />
+              </div>
             </div>
           </div>
-        </div> */}
+          {/* row 3 end */}
+
+        </div>
+
       </section>
     </div>
   );
