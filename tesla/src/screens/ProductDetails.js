@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import imageMapping from "../assets/lib/imageMapper";
-// import * from '../assets/images/cars/' as imageMapping2;
-import CarouselImgFirst from "../assets/images/cars/Model3Performance/Model-3-Performance_52.jpg";
 import { useLocation } from "react-router-dom";
 
 function ProductDetails() {

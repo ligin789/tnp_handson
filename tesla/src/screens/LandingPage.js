@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../assets/style.css";
+import "../assets/style/style.css";
 import FirstImg from "../assets/images/heroSectionImg.png";
 import Heroimg from '../assets/images/cars/Roadster/heroImg.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader

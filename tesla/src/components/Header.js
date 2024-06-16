@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import TeslanameLogo from "../assets/images/tesla-wide.png";
-import "../assets/style.css";
+import "../assets/style/style.css";
 
 function Header() {
   return (
