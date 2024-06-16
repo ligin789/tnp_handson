@@ -651,6 +651,9 @@ hr.colored {
     .dot2-img4 {
         display: none;
     }
+    .noMarginRight{
+        margin-right:0px !important;
+    }
 }
 
 #text-crypto-wrapper {

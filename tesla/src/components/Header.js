@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import TeslanameLogo from "../assets/tesla-wide.png";
+import TeslanameLogo from "../assets/images/tesla-wide.png";
 import "../assets/style.css";
 
 function Header() {
@@ -32,7 +32,7 @@ function Header() {
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
           <form className="form-inline my-2 my-lg-0">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li className="nav-item active">
+              <li className="nav-item ">
                 <Link className="nav-link" to="/">
                   Home <span className="sr-only">(current)</span>
                 </Link>

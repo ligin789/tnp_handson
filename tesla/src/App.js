@@ -5,6 +5,7 @@ import Routes from "./components/Routes";
 
 function App() {
   const [loader, setLoader] = useState(true);
+  //inital loading loader
   useEffect(()=>
   {
     setTimeout(()=>

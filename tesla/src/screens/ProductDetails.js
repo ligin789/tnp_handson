@@ -41,6 +41,8 @@ function ProductDetails() {
   return (
     <div className="container-fluid">
       <div className="row m-3 mx-5">
+                {/* img selector section */}
+
         <div
           className="col-sm-4 col-lg-6 mt-5"
           style={{ backgroundColor: "white" }}
@@ -54,20 +56,23 @@ function ProductDetails() {
             swipeable={false}
             showIndicators={false}
           >
-            {selectedCar?.name?.color.map((color) => {
+            {selectedCar?.name?.color.map((color,key) => {
               return (
-                <div className="courosel-container">
+                <div className="courosel-container" key={key}>
                   <img src={color.Link} alt={color.colorName} />
                 </div>
               );
             })}
           </Carousel>
         </div>
+                {/* img selector section end */}
+                {/* details section */}
+
         <div
           className="col-sm-12 col-lg-6 mt-3"
           style={{ backgroundColor: "white" }}
         >
-          <div className="text-center mt-5 mr-5 pr-5">
+          <div className=" col-sm-12 text-center mt-5 mr-5 pr-5">
             <h1 className="mb-5">{selectedCar?.name?.name}</h1>
           </div>
           <div className="container mt-5">
@@ -109,6 +114,8 @@ function ProductDetails() {
             )}
           </div>
         </div>
+                        {/* details section end */}
+
         {/* galery section */}
         <div className="section-wrap col-10 mx-auto text-center page-section-for-scroll position-relative">
           <div id="whyteslaSection"></div>
@@ -171,9 +178,11 @@ function ProductDetails() {
           </div>
         </div>
       </div>
+              {/* galery section end*/}
+
 
       {/* <!-- Modal --> */}
-      <div className="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div className="modal fade bd-example-modal-lg"  role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-lg">
           <div className="modal-content">
             <div className="modal-header">
@@ -199,19 +208,19 @@ function ProductDetails() {
                     <div className="card-body">
                       <div className="form-check flex-row d-flex justify-content-between mx-5 ">
                         <input className="form-check-input" onChange={(e) => updatePrice(e, 350)} type="checkbox" checked={itemPriceList.wallConnector} name="wallConnector" value="" id="flexCheckDefault" />
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label">
                           Wall Connector
                         </label>
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label">
                           $350
                         </label>
                       </div>
                       <div className="form-check flex-row d-flex justify-content-between mx-5">
                         <input className="form-check-input" name="mobileConnector" onChange={(e) => updatePrice(e, 250)} type="checkbox" checked={itemPriceList.mobileConnector} value="" id="flexCheckChecked"  />
-                        <label className="form-check-label" for="flexCheckChecked" >
+                        <label className="form-check-label" >
                           Mobile Connector
                         </label>
-                        <label className="form-check-label" for="flexCheckChecked">
+                        <label className="form-check-label" >
                           $250
                         </label>
                       </div>
@@ -230,19 +239,19 @@ function ProductDetails() {
                     <div className="card-body">
                       <div className="form-check flex-row d-flex justify-content-between mx-5" >
                         <input className="form-check-input " type="checkbox" onChange={(e) => updatePrice(e, 100)} value="" checked={itemPriceList.sunShade} id="flexCheckDefault" name="sunShade" />
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label">
                           Sun Shade
                         </label>
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           $100
                         </label>
                       </div>
                       <div className="form-check flex-row d-flex justify-content-between mx-5" >
                         <input className="form-check-input " onChange={(e) => updatePrice(e, 450)} type="checkbox" value="" checked={itemPriceList.roofRack} id="flexCheckDefault" name="roofRack" />
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label">
                           Roof Rack
                         </label>
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           $450
                         </label>
                       </div>
@@ -261,18 +270,18 @@ function ProductDetails() {
                     <div className="card-body">
                       <div className="form-check flex-row d-flex justify-content-between mx-5" >
                         <input className="form-check-input " onChange={(e) => updatePrice(e, 8000)} type="checkbox" value="" id="flexCheckDefault" checked={itemPriceList.allWheel} name="allWheel" />
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           All Wheel Drive
                         </label>
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           $8000
                         </label>
                       </div> <div className="form-check flex-row d-flex justify-content-between mx-5" >
                         <input className="form-check-input " type="checkbox" value="" onChange={(e) => updatePrice(e, 8000)} checked={itemPriceList.plaid} id="flexCheckDefault" name="plaid" />
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label">
                           S-Plaid
                         </label>
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           $8000
                         </label>
                       </div>
@@ -283,27 +292,27 @@ function ProductDetails() {
                 <div className="card">
                   <div className="card-header" id="headingThree">
                     <h2 className="mb-0">
-                      <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                         Extra Addon
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div id="collapseFour" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div className="card-body">
                       <div className="form-check flex-row d-flex justify-content-between mx-5" >
                         <input className="form-check-input " type="checkbox" value="" id="flexCheckDefault" checked={itemPriceList.selfDrive} name="selfDrive" onChange={(e) => updatePrice(e, 8000)} />
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           Full Self Drive Capabilty
                         </label>
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           $8000
                         </label>
                       </div><div className="form-check flex-row d-flex justify-content-between mx-5" >
                         <input className="form-check-input " type="checkbox" value="" id="flexCheckDefault" checked={itemPriceList.warranty} name="warranty" onChange={(e) => updatePrice(e, 5000)} />
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           Extended Warranty (3 year)
                         </label>
-                        <label className="form-check-label" for="flexCheckDefault">
+                        <label className="form-check-label" >
                           $5000
                         </label>
                       </div>
